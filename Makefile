@@ -2,26 +2,26 @@
 TO = $(PREFIX)/home/root/dvtests/
 
 all:
-	$(CC) $(CFLAGS) $(LDLAGS) -o dvgpio_fast dvgpio_fast.c
-	$(CXX) $(CXXFLAGS) $(LDLAGS) -o dvgpio_simp dvgpio_simp.c dv/CPin.cpp
-	$(CXX) $(CXXFLAGS) $(LDLAGS) -o dvi2c dvi2c.c dv/Ci2c.cpp dv/Ci2c_smbus.cpp
-	$(CXX) $(CXXFLAGS) $(LDLAGS) -o dvspi dvspi.cpp dv/Cspi.cpp
-	$(CC) $(CFLAGS) $(LDLAGS) -o rtctest rtctest.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o rtc01 rtc01.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o endian endian.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o beep_bell beep_bell.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o beep_tone beep_tone.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o spidev_test spidev_test.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o tpsid tpsid.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o ttyhrw ttyhrw.c
-	$(CXX) $(CXXFLAGS) $(LDLAGS) -Idv/ -o tty485 tty485.cpp dv/Cuart.cpp
-	$(CXX) $(CXXFLAGS) $(LDLAGS) -Idv/ -o set485 set485.cpp dv/Cuart.cpp
-	$(CXX) $(CXXFLAGS) $(LDLAGS) -Idv/ -o twg twg.cpp dv/CWg.cpp
-	$(CC) $(CFLAGS) $(LDLAGS) -o tstR tstR.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o tstW tstW.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o 485r 485r.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o 485s 485s.c
-	$(CC) $(CFLAGS) $(LDLAGS) -o input_kbd_event input_kbd_event.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o dvgpio_fast dvgpio_fast.c
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o dvgpio_simp dvgpio_simp.c dv/CPin.cpp
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o dvi2c dvi2c.c dv/Ci2c.cpp dv/Ci2c_smbus.cpp
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o dvspi dvspi.cpp dv/Cspi.cpp
+	$(CC) $(CFLAGS) $(LDFLAGS) -o rtctest rtctest.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o rtc01 rtc01.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o endian endian.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o beep_bell beep_bell.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o beep_tone beep_tone.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o spidev_test spidev_test.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o tpsid tpsid.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o ttyhrw ttyhrw.c
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -Idv/ -o tty485 tty485.cpp dv/Cuart.cpp
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -Idv/ -o set485 set485.cpp dv/Cuart.cpp
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -Idv/ -o twg twg.cpp dv/CWg.cpp
+	$(CC) $(CFLAGS) $(LDFLAGS) -o tstR tstR.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o tstW tstW.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o 485r 485r.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o 485s 485s.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o input_kbd_event input_kbd_event.c
 
 
 clean:
